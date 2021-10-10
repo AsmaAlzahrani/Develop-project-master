@@ -1,0 +1,222 @@
+/* All */
+body {
+  font-family: 'Quicksand';
+  margin: 0;
+  padding:0;
+}
+
+/* Grid */
+.Container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.2fr 0.5fr 0.2fr 0.5fr 1.2fr 1.2fr 1.2fr 0.8fr 0.2fr;
+  grid-template-areas:
+    "nav nav"
+    "header header"
+    "services services"
+    "cards cards"
+    "Img1 Content1"
+    "Content2 Img2"
+    "Img3 Content3"
+    "Contact Contact"
+    "footer footer";
+  text-align: center;
+  width: 100%;
+  font-weight: 800;
+}
+
+/* Navbar*/
+nav{
+  grid-area: nav;
+  background-color:white; 
+  color: black;
+}
+.Nav-List{
+font-size: 2rem;
+padding: 1rem 0px;
+display: flex;
+justify-content:flex-end;
+margin: 0px;
+margin-bottom: 0px;
+}
+.Nav-Item{
+  list-style: none;
+  margin-right: 1.5rem;
+}
+.Nav-Item a{
+  text-decoration: none;
+  color: #0c1753;
+}
+.Nav-Item a:hover{
+  color: #ffe101;
+}
+.Logo{
+  width: 200px;
+}
+.Nav-Item:first-child{
+  margin-left: 1rem;
+  margin-right:auto;
+}
+
+/* Header */
+header{
+  grid-area: header;
+  background: linear-gradient(#0c1753, #9375ff);
+  color: #ffffff;
+}
+.Top-Header{
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.Top-Header .Header-Contant{
+  max-width: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.Top-Header .Contant-Header h1{ 
+font-size: 3rem;
+margin-bottom: 30px;
+text-align: left;
+}
+.Top-Header .Contant-Header p{ 
+  font-size: 1rem;
+  margin-bottom: 50px;
+  text-align: left;
+}
+.Top-Header .Contant-Header button{ 
+  background-color: #ffe101;
+  color:#00a69c;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px 50px;
+  text-align: center;
+  box-shadow: 0 0px 4px 1px #bdadfb;
+  border: 2px solid #ffe101;
+}
+.Top-Header img{
+  height: 700px;
+  width: 700px;
+  margin-right: 0px;
+}
+
+/* Service */
+#services {
+  grid-area: services;
+  background:white;
+  display: grid;
+}
+#services h3{
+  color: #00a69c;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/* Cards */
+#cards{
+  grid-area:cards;
+  background-color:#e9e6f5;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.Card1{
+  background-color:white;
+  box-shadow: 0px 5px 2px gray;
+  width: 250px;
+  height: 250px;
+  margin: 30px;
+  padding: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0c1753;
+  display: inline-block;
+}
+.Img-Backgroud{
+  background-color: #ffe101;
+  border: #ffe101;
+  border-radius: 70%;
+  height: 70%;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.Card1 .Image1{
+  width: 70%;
+  margin: 15%;
+}
+
+/* Contant */
+#Img1{
+  grid-area:Img1;
+}
+#Content1{
+  grid-area:Content1;
+}
+#Img2{
+  grid-area:Img2;
+}
+#Content2{
+  grid-area:Content2;
+}
+#Img3{
+  grid-area:Img3;
+}
+#Content3{
+  grid-area:Content3;
+}
+.About-Img{
+  width: 70%;
+}
+.Text-Style {
+  padding-top: 70px;
+  text-align: left;
+  margin: 20px;
+  line-height: 30px;
+  font-weight: 50;
+  margin-left: 10%;
+}
+.Text-Style h3{ 
+  color: #00a69c;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* Form */
+
+
+/* Footer */
+
+/* Media Screen */
+@media only screen and (max-width: 600) {
+  .Container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.5fr 0.2fr 0.4fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 0.8fr 0.2fr;
+    grid-template-areas:
+    "nav"
+    "header"
+    "services"
+    "cards"
+    "Img1" 
+    "Content1"
+    "Img2" 
+    "Content2"
+    "Img3" 
+    "Content3"
+    "Contact"
+    "footer";
+  }
+  .Top-Header{
+    flex-direction: column-reverse;
+    padding: 30px;
+  }
+  .Top-Header img{
+    max-width: 100%;
+  }
+  .Top-Header .Contant-Header{
+    text-align: center;
+  }
+}
