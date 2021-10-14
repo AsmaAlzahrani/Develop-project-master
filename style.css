@@ -33,12 +33,12 @@ nav{
   color: black;
 }
 .Nav-List{
-font-size: 2rem;
-padding: 1rem 0px;
-display: flex;
-justify-content:flex-end;
-margin: 0px;
-margin-bottom: 0px;
+  font-size: 2rem;
+  padding: 1rem 0px;
+  display: flex;
+  justify-content:flex-end;
+  margin: 0px;
+  margin-bottom: 0px;
 }
 .Nav-Item{
   list-style: none;
@@ -76,9 +76,9 @@ header{
   text-align: left;
 }
 .Top-Header .Contant-Header h1{ 
-font-size: 3rem;
-margin-bottom: 30px;
-text-align: left;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-align: left;
 }
 .Top-Header .Contant-Header p{ 
   font-size: 1rem;
@@ -101,7 +101,7 @@ text-align: left;
   margin-right: 0px;
 }
 
-/* Service */
+/* Services */
 #services {
   grid-area: services;
   background:white;
@@ -149,7 +149,7 @@ text-align: left;
   margin: 15%;
 }
 
-/* Contant */
+/* Content */
 #Img1{
   grid-area:Img1;
 }
@@ -170,26 +170,73 @@ text-align: left;
 }
 .About-Img{
   width: 70%;
+  margin: 10%;
 }
 .Text-Style {
   padding-top: 70px;
   text-align: left;
   margin: 20px;
   line-height: 30px;
-  font-weight: 50;
+  font-weight: 10;
   margin-left: 10%;
 }
 .Text-Style h3{ 
   color: #00a69c;
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: bolder;
+}
+.Text-Style ul{ 
+  line-height: 50px;
 }
 
 /* Form */
-
-
+#Contact{
+  grid-area:Contact;
+  background:linear-gradient(180deg , #0c1753 0% ,#0c1753 100%);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  align-items:left ;
+}
+#Contact h2{
+  font-size: 2.5rem;
+}
+#Contact h5{
+  font-size: 1rem;
+}
+#Contact input{
+  background: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+}
+#Contact textarea{
+  background: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+}
+#Contact button{
+  background: #ffe101;
+  border: 2px solid #ffe101;
+  color: #00a69c;
+  border-radius: 5px;
+  display: block;
+  margin-top: 10px;
+  height: 40px;
+  font-size: large;
+  font-weight: 500;
+  display: inline;
+  width: 50%;
+}
 /* Footer */
-
 /* Media Screen */
 @media only screen and (max-width: 600) {
   .Container{
@@ -209,6 +256,9 @@ text-align: left;
     "Contact"
     "footer";
   }
+  .About-Img{
+    width: 80%;
+  }
   .Top-Header{
     flex-direction: column-reverse;
     padding: 30px;
@@ -218,5 +268,8 @@ text-align: left;
   }
   .Top-Header .Contant-Header{
     text-align: center;
+  }
+  #contact{
+    flex-direction: column;
   }
 }
