@@ -33,11 +33,11 @@ nav{
   color: black;
 }
 .Nav-List{
-  font-size: 2rem;
-  padding: 1rem 0px;
+  font-size: 1.5rem;
+  padding: 1rem 1px;
   display: flex;
   justify-content:flex-end;
-  margin: 0px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 .Nav-Item{
@@ -53,6 +53,7 @@ nav{
 }
 .Logo{
   width: 200px;
+  margin-top: 0px;
 }
 .Nav-Item:first-child{
   margin-left: 1rem;
@@ -174,7 +175,7 @@ header{
 }
 .Text-Style {
   padding-top: 70px;
-  text-align: left;
+  text-align: left!important;
   margin: 20px;
   line-height: 30px;
   font-weight: 10;
@@ -237,6 +238,35 @@ header{
   width: 50%;
 }
 /* Footer */
+footer{
+  grid-area: footer; 
+}
+#footer-grid{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  font-weight: 900;
+}
+#footer-grid h3{
+  font-size: 1.5rem;
+  color: #00a69c;
+  width: 900;
+}
+#footer-grid .footer-img{
+  max-width: 230px;
+  margin-left: 40px;
+}
+#footer-grid ul li{
+  list-style: none;
+  color: #0c1753;
+  margin: 8px;
+}
+#footer-grid .icon{
+  font-size: 2rem;
+  color: #0c1753;
+}
 /* Media Screen */
 @media only screen and (max-width: 600) {
   .Container{
@@ -271,5 +301,10 @@ header{
   }
   #contact{
     flex-direction: column;
+  }
+  .footer-grid{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 }
